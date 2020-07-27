@@ -7,3 +7,21 @@
 //
 
 import Foundation
+
+class Cell {
+    let x: Int
+    let y: Int
+
+    var state: State
+
+    init(x: Int, y: Int) {
+        self.x = x
+        self.y = y
+        self.state = .Dead
+    }
+}
+
+enum State {
+    case Alive
+    case Dead
+}
