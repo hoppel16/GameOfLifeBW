@@ -12,6 +12,8 @@
 		2B9D760824CF2F6A00E38360 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B9D760724CF2F6A00E38360 /* Assets.xcassets */; };
 		2B9D760B24CF2F6A00E38360 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B9D760A24CF2F6A00E38360 /* Preview Assets.xcassets */; };
 		2B9D760E24CF2F6A00E38360 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B9D760C24CF2F6A00E38360 /* Main.storyboard */; };
+		2B9D761A24CF329800E38360 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9D761924CF329800E38360 /* Cell.swift */; };
+		2B9D761C24CF351800E38360 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9D761B24CF351800E38360 /* Grid.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		2B9D760D24CF2F6A00E38360 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2B9D760F24CF2F6B00E38360 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B9D761024CF2F6B00E38360 /* GameOfLife.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GameOfLife.entitlements; sourceTree = "<group>"; };
+		2B9D761924CF329800E38360 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		2B9D761B24CF351800E38360 /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,12 +59,9 @@
 		2B9D760224CF2F6900E38360 /* GameOfLife */ = {
 			isa = PBXGroup;
 			children = (
-				2B9D760324CF2F6900E38360 /* AppDelegate.swift */,
-				2B9D760524CF2F6900E38360 /* ContentView.swift */,
-				2B9D760724CF2F6A00E38360 /* Assets.xcassets */,
-				2B9D760C24CF2F6A00E38360 /* Main.storyboard */,
-				2B9D760F24CF2F6B00E38360 /* Info.plist */,
-				2B9D761024CF2F6B00E38360 /* GameOfLife.entitlements */,
+				2B9D761824CF328100E38360 /* Models */,
+				2B9D761624CF2FAA00E38360 /* Scenes */,
+				2B9D761724CF2FF500E38360 /* Resources */,
 				2B9D760924CF2F6A00E38360 /* Preview Content */,
 			);
 			path = GameOfLife;
@@ -72,6 +73,35 @@
 				2B9D760A24CF2F6A00E38360 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2B9D761624CF2FAA00E38360 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				2B9D760C24CF2F6A00E38360 /* Main.storyboard */,
+				2B9D760524CF2F6900E38360 /* ContentView.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		2B9D761724CF2FF500E38360 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2B9D760324CF2F6900E38360 /* AppDelegate.swift */,
+				2B9D760724CF2F6A00E38360 /* Assets.xcassets */,
+				2B9D760F24CF2F6B00E38360 /* Info.plist */,
+				2B9D761024CF2F6B00E38360 /* GameOfLife.entitlements */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2B9D761824CF328100E38360 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2B9D761924CF329800E38360 /* Cell.swift */,
+				2B9D761B24CF351800E38360 /* Grid.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +177,8 @@
 			files = (
 				2B9D760624CF2F6900E38360 /* ContentView.swift in Sources */,
 				2B9D760424CF2F6900E38360 /* AppDelegate.swift in Sources */,
+				2B9D761A24CF329800E38360 /* Cell.swift in Sources */,
+				2B9D761C24CF351800E38360 /* Grid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
